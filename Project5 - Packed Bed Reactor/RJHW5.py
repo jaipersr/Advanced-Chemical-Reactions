@@ -7,12 +7,13 @@ ChE 421 Advance Chemical Reactions
 The following code models a non isothermal packed bed reactor that is producing
 pthalic anhydride from ortho xylene. The reactions is very exothermic and produces
 -307 kcal/mol of ortho xylene reacted. The code simultaneously solves for the 
-concentration of ortho xylene and the temperature at all points in the reactor.
-Plots of the maximum centerline temperature are generated as functions of the 
-wall temperature at various inlet feed temperatures. The maximum allowable center
-line temperature for this system is 690 K. Wall temperatures that allow maximum 
-conversion of orthoxylene without having the centerline temperature go above the 
-limit are printed in a data frame.
+concentration of ortho xylene and the temperature at all points in the reactor by using
+method of lines to reduce the PDEs of temperature and concentration to ODEs and then
+by using Euler's method to solve.Plots of the maximum centerline temperature 
+are generated as functions of the wall temperature at various inlet feed temperatures. 
+The maximum allowable centerline temperature for this system is 690 K. Wall 
+temperatures that allow maximum conversion of orthoxylene without having the 
+centerline temperature go above the limit are printed in a data frame.
 Problem parameters taken from below
 Nauman,E.; Chemical Reactor Design, Optimization and Scaleup, 2nd ed.; John Wiley & Sons: New Jersey,2008;pp 324 - 329.
 """
